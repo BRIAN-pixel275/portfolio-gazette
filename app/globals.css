@@ -118,3 +118,28 @@ td:first-child { font-weight: 600; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+.github-section { padding: 3rem 0; border-bottom: 1px solid var(--rule); }
+.github-profile-link { flex: 0 0 auto; font: 600 .86rem var(--sans); text-decoration-color: var(--accent); text-underline-offset: 4px; }
+.github-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2rem, 5vw, 4rem); }
+.contribution-panel, .repositories-panel { min-width: 0; }
+.contribution-panel h3, .repositories-panel h3 { margin: 0; font: 600 1.15rem var(--sans); }
+.github-intro { margin: .35rem 0 1rem; color: var(--soft); font: .86rem/1.5 var(--sans); }
+.contribution-chart { display: block; overflow-x: auto; padding: .8rem; border: 1px solid var(--rule); background: #fff; }
+.contribution-chart img { display: block; width: 100%; min-width: 500px; height: auto; }
+.repository-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--rule); }
+.repository-item { padding: .8rem 0; border-bottom: 1px solid var(--rule); }
+.repository-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.repository-heading h4 { margin: 0; overflow-wrap: anywhere; font: 600 1rem var(--sans); }
+.repository-heading h4 a { text-decoration: none; }
+.repository-heading h4 a:hover { color: var(--accent); }
+.repository-stars { flex: 0 0 auto; color: var(--soft); font: .76rem var(--sans); }
+.repository-item > p { margin: .3rem 0; color: var(--soft); font: .86rem/1.45 var(--sans); }
+.repository-meta { display: flex; flex-wrap: wrap; gap: .3rem 1rem; color: var(--soft); font: .74rem var(--sans); }
+.github-message { margin: .9rem 0; color: var(--soft); font: .9rem/1.5 var(--sans); }
+.github-error { color: #9b2a20; }
+.github-error button { padding: .4rem .7rem; border: 1px solid currentColor; background: transparent; color: inherit; font: 600 .82rem var(--sans); cursor: pointer; }
+@media (max-width: 760px) {
+  .github-layout { grid-template-columns: 1fr; gap: 2rem; }
+  .github-section .section-heading { display: block; }
+  .github-profile-link { display: inline-block; margin-top: .9rem; }
+}

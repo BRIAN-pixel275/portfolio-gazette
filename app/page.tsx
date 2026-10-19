@@ -1,4 +1,5 @@
 import { site, lead, stories, profile, markets, experience, education, classifieds } from "@/lib/content";
+import GitHubActivity from "@/app/components/github-activity";
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
         </div>
         <nav className="sections" aria-label="Sections">
           <a href="#work">Selected work</a>
+          <a href="#github">GitHub activity</a>
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
@@ -56,6 +58,8 @@ export default function Page() {
           ))}
         </div>
       </section>
+
+      <GitHubActivity />
 
       <section id="about" className="profile" aria-labelledby="profile-h">
         <p className="eyebrow">The person behind the projects</p>
@@ -119,3 +123,5 @@ export default function Page() {
     </main>
   );
 }
+
+
