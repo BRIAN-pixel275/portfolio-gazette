@@ -39,6 +39,15 @@ export const stories = [
     stack: "React, Vite, CSS, Supabase",
     href: "https://elevaralegacy.netlify.app/",
     byline: "Web development",
+    screenshots: [
+      {
+        src: "/images/projects/elevara-home.png",
+        alt: "Elevara Legacy homepage with its mission statement and navigation",
+        caption: "Elevara Legacy homepage",
+        width: 1841,
+        height: 922,
+      },
+    ],
   },
   {
     kicker: "Marketplace · Collaboration",
@@ -47,6 +56,15 @@ export const stories = [
     stack: "React, TypeScript, Vite",
     href: "https://shoplicity.app/",
     byline: "Development contributor",
+    screenshots: [
+      {
+        src: "/images/projects/shoplicity-feed.png",
+        alt: "Shoplicity campus marketplace feed showing student listings",
+        caption: "Shoplicity campus feed",
+        width: 1849,
+        height: 923,
+      },
+    ],
   },
   {
     kicker: "Backend · Java",
@@ -65,6 +83,22 @@ export const stories = [
     href: "https://kukisa-registration.vercel.app/",
     byline: "Project contributor",
     note: "Feature completion should be confirmed before relying on every workflow.",
+    screenshots: [
+      {
+        src: "/images/projects/kukisa-home.png",
+        alt: "KUKISA homepage introducing the student association",
+        caption: "KUKISA association homepage",
+        width: 1837,
+        height: 918,
+      },
+      {
+        src: "/images/projects/kukisa-registration.png",
+        alt: "KUKISA first-year registration form with personal and academic information fields",
+        caption: "First-year registration form",
+        width: 1768,
+        height: 923,
+      },
+    ],
   },
 ];
 

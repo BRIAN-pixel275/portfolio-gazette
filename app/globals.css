@@ -47,6 +47,10 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .grid3 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; }
 .story-card { position: relative; min-height: 250px; padding: 1.4rem 2.5rem 1.35rem 0; border-top: 1px solid var(--rule); }
 .story-number { position: absolute; top: 1.55rem; right: .15rem; color: #a5aea5; font: 600 .75rem var(--sans); }
+.story-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: .6rem; margin-bottom: 1rem; }
+.story-image { min-width: 0; margin: 0; }
+.story-image img { display: block; width: 100%; height: auto; aspect-ratio: 1.9; object-fit: cover; border: 1px solid var(--rule); }
+.story-image figcaption { margin-top: .3rem; color: var(--soft); font: .72rem/1.4 var(--sans); }
 .story-card .kicker { margin-top: .2rem; }
 .story-card h3 { max-width: 440px; margin: .3rem 0 .65rem; font: 600 clamp(1.5rem, 2.5vw, 2.1rem)/1.1 var(--serif); letter-spacing: -.025em; }
 .story-card h3 a { text-decoration: none; }

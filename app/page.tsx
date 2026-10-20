@@ -1,5 +1,6 @@
 import { site, lead, stories, profile, markets, experience, education, classifieds } from "@/lib/content";
 import GitHubActivity from "@/app/components/github-activity";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -45,6 +46,22 @@ export default function Page() {
           {stories.map((story, index) => (
             <article className="story-card" key={story.title}>
               <span className="story-number">0{index + 1}</span>
+              {story.screenshots && (
+                <div className="story-gallery">
+                  {story.screenshots.map((screenshot) => (
+                    <figure className="story-image" key={screenshot.src}>
+                      <Image
+                        src={screenshot.src}
+                        alt={screenshot.alt}
+                        width={screenshot.width}
+                        height={screenshot.height}
+                        sizes="(max-width: 760px) 100vw, 45vw"
+                      />
+                      <figcaption>{screenshot.caption}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              )}
               <p className="kicker">{story.kicker}</p>
               <h3>
                 {story.href
@@ -123,5 +140,4 @@ export default function Page() {
     </main>
   );
 }
-
 
