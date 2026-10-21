@@ -15,12 +15,13 @@ export default function Page() {
             <span>Portfolio · 2026</span>
           </div>
           <a className="nameplate" href="#home" aria-label={`${site.name} home`}>{site.paper}<span>.</span></a>
-          <ThemeToggle />
           <div className="identity">
             <p>{site.name} <span>({site.nickname})</span></p>
             <p className="status">{site.status}</p>
           </div>
-          <nav className="sections" aria-label="Sections">
+        </header>
+        <nav className="sections" aria-label="Sections">
+          <div className="sections-links">
             <a href="#work">Selected work</a>
             <a href="#github">GitHub activity</a>
             <a href="#about">About</a>
@@ -29,8 +30,9 @@ export default function Page() {
             <a href="#notes">Learning notes</a>
             <a href="/cv">CV</a>
             <a href="#contact">Contact</a>
-          </nav>
-        </header>
+          </div>
+          <ThemeToggle />
+        </nav>
 
       <section id="home" className="lead" aria-labelledby="lead-h">
         <p className="kicker">{lead.kicker}</p>

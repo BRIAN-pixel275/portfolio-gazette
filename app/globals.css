@@ -23,7 +23,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 1.5rem; }
+html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 1.05rem/1.65 var(--serif); transition: background-color .2s ease, color .2s ease; }
 a { color: inherit; text-underline-offset: 4px; }
 :where(a, button):focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
@@ -31,7 +31,7 @@ a { color: inherit; text-underline-offset: 4px; }
 .skip-link:focus { transform: translateY(0); }
 .sheet { max-width: 1180px; margin: 0 auto; padding: 1.5rem 2.5rem 3rem; }
 .masthead { position: relative; text-align: center; border-bottom: 1px solid var(--rule); }
-.theme-toggle { position: absolute; top: .4rem; right: 0; display: inline-flex; align-items: center; gap: .45rem; min-height: 2.5rem; padding: .45rem .65rem; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 600 .78rem var(--sans); cursor: pointer; }
+.theme-toggle { display: inline-flex; align-items: center; gap: .45rem; min-height: 2.5rem; padding: .45rem .65rem; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 600 .78rem var(--sans); cursor: pointer; }
 .theme-toggle, .sections a, .button, .project-links a, .text-link, .cv-print-button, .cv-home-link { transition: color .18s ease, background-color .18s ease, border-color .18s ease, transform .18s ease; }
 .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
 .dateline { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; border-bottom: 1px solid var(--rule); padding-bottom: .6rem; color: var(--soft); font: 600 .78rem var(--sans); letter-spacing: .08em; text-transform: uppercase; }
@@ -42,9 +42,12 @@ a { color: inherit; text-underline-offset: 4px; }
 .identity p:first-child span { color: var(--soft); }
 .identity .status { color: var(--soft); }
 .identity .status::before { content: ""; display: inline-block; width: .45rem; height: .45rem; margin: 0 .5rem .08rem 0; border-radius: 50%; background: #638e4a; }
-.sections { display: flex; justify-content: center; gap: 1.8rem; flex-wrap: wrap; border-top: 1px solid var(--rule); padding: .8rem 0; font: 600 .83rem var(--sans); letter-spacing: .055em; text-transform: uppercase; }
+.sections { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 1rem; width: 100vw; margin-left: calc(50% - 50vw); padding: .55rem max(1rem, calc((100vw - 1180px) / 2 + 2.5rem)); border-top: 1px solid color-mix(in srgb, var(--rule) 65%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--rule) 75%, transparent); background: color-mix(in srgb, var(--paper) 82%, transparent); box-shadow: 0 8px 24px rgb(23 37 31 / 8%); backdrop-filter: blur(16px) saturate(155%); -webkit-backdrop-filter: blur(16px) saturate(155%); font: 600 .83rem var(--sans); letter-spacing: .055em; text-transform: uppercase; }
+.sections-links { display: flex; align-items: center; gap: clamp(.8rem, 1.7vw, 1.8rem); min-width: 0; overflow-x: auto; scrollbar-width: thin; }
 .sections a { text-decoration: none; }
+.sections a { flex: 0 0 auto; }
 .sections a:hover, .text-link:hover { color: var(--accent); }
+.sections .theme-toggle { flex: 0 0 auto; white-space: nowrap; letter-spacing: normal; text-transform: none; }
 .lead { padding: clamp(3rem, 8vw, 6.5rem) 0 3.5rem; border-bottom: 1px solid var(--rule); }
 .kicker, .eyebrow { margin: 0 0 .65rem; color: var(--accent); font: 700 .76rem var(--sans); letter-spacing: .12em; text-transform: uppercase; }
 .mega { max-width: 950px; margin: .2rem 0 1rem; font: 600 clamp(2.8rem, 7vw, 6.3rem)/.99 var(--serif); letter-spacing: -.055em; }
@@ -140,8 +143,10 @@ td:first-child { font-weight: 600; }
   .sheet { padding: 1rem 1.25rem 2.5rem; }
   .dateline { justify-content: center; text-align: center; }
   .dateline span:nth-child(2) { display: none; }
-  .sections { gap: .8rem 1.2rem; }
-  .theme-toggle { position: static; margin: .25rem 0 .7rem; }
+  .sections { gap: .6rem; padding: .45rem 1rem; }
+  .sections-links { gap: 1rem; }
+  .sections .theme-toggle { min-height: 2.3rem; padding: .35rem .5rem; }
+  .sections .theme-toggle span:last-child { display: none; }
   .lead { padding: 3.5rem 0 2.5rem; }
   .cols { column-count: 1; }
   .section-heading { display: block; }
