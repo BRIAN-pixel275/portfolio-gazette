@@ -11,7 +11,10 @@ A responsive personal portfolio for Brian Muchiru Mwangi (Brayo), built with Nex
 - Skills and tools
 - Experience and community roles
 - Education and certification
+- Learning notes on software and project practices
+- A print-ready CV that can be saved as a PDF from the browser
 - Contact links to GitHub and LinkedIn
+- Light and dark themes, with a saved preference and system-theme default
 
 ## Getting started
 
@@ -30,7 +33,11 @@ The portfolio displays a contribution chart for `BRIAN-pixel275` using the exter
 
 ## Editing portfolio content
 
-Most portfolio copy, project details, and profile links are maintained in [`lib/content.ts`](./lib/content.ts). The GitHub activity component is in [`app/components/github-activity.tsx`](./app/components/github-activity.tsx). The page structure is in [`app/page.tsx`](./app/page.tsx), metadata is in [`app/layout.tsx`](./app/layout.tsx), and visual styles are in [`app/globals.css`](./app/globals.css).
+Most portfolio copy, project details, learning notes, and profile links are maintained in [`lib/content.ts`](./lib/content.ts). Add a `codeHref` to a project only when its source repository is public and approved for sharing; live and source links render separately. The CV is available at `/cv`; choose “Save as PDF / Print” and select “Save as PDF” in the browser’s print dialog to create a PDF. Update the CV from the same education, experience, skills, and project data in `lib/content.ts`.
+
+The GitHub activity component is in [`app/components/github-activity.tsx`](./app/components/github-activity.tsx). The page structure is in [`app/page.tsx`](./app/page.tsx), metadata and social preview settings are in [`app/layout.tsx`](./app/layout.tsx), and visual styles are in [`app/globals.css`](./app/globals.css).
+
+Set `NEXT_PUBLIC_SITE_URL` to the deployed portfolio origin (for example, `https://your-domain.example`) so Open Graph and Twitter preview URLs resolve to the public site.
 
 Check project descriptions and links before publishing, especially where the content notes that features or contributions still need confirmation.
 

@@ -9,6 +9,7 @@ export const site = {
     { label: "GitHub", href: "https://github.com/BRIAN-pixel275" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/brian-muchiru-b0b057356/" },
   ],
+  description: "Brian Muchiru Mwangi is an Economics and Finance student in Kenya building practical digital products and exploring software development, fintech, and thoughtful design.",
 };
 
 export const lead = {
@@ -28,7 +29,8 @@ export const stories = [
     title: "KUKISA Finance Management System",
     deck: "A finance management tool connected to my work as KUKISA treasurer, with income and expense tracking, a dashboard, and reporting in scope.",
     stack: "React, Vite, Tailwind CSS, Supabase",
-    href: "https://finnancemanagement.netlify.app/",
+    liveHref: "https://finnancemanagement.netlify.app/",
+    codeHref: "",
     byline: "Project contributor",
     note: "Some discussed features are still subject to completion verification.",
   },
@@ -37,7 +39,8 @@ export const stories = [
     title: "Elevara Legacy",
     deck: "A multi-page website for a women’s empowerment organization focused on knowledge, skills, confidence, and opportunity.",
     stack: "React, Vite, CSS, Supabase",
-    href: "https://elevaralegacy.netlify.app/",
+    liveHref: "https://elevaralegacy.netlify.app/",
+    codeHref: "",
     byline: "Web development",
     screenshots: [
       {
@@ -54,7 +57,8 @@ export const stories = [
     title: "Shoplicity",
     deck: "A student skills marketplace connecting people who have skills with people looking for them. I contribute to development and have supported promotion with design work.",
     stack: "React, TypeScript, Vite",
-    href: "https://shoplicity.app/",
+    liveHref: "https://shoplicity.app/",
+    codeHref: "",
     byline: "Development contributor",
     screenshots: [
       {
@@ -71,7 +75,8 @@ export const stories = [
     title: "Rental Tracker",
     deck: "A Java CLI project exploring rental workflows, a SQLite data layer, repository and service patterns, and automated tests.",
     stack: "Java, SQLite, Maven, JUnit",
-    href: "",
+    liveHref: "",
+    codeHref: "",
     byline: "Learning project",
     note: "Local project; no public repository link available.",
   },
@@ -80,7 +85,8 @@ export const stories = [
     title: "KUKISA First-Year Registration",
     deck: "A registration website associated with KUKISA and first-year students, built with Supabase and a custom university-inspired color palette.",
     stack: "Web development, Supabase",
-    href: "https://kukisa-registration.vercel.app/",
+    liveHref: "https://kukisa-registration.vercel.app/",
+    codeHref: "",
     byline: "Project contributor",
     note: "Feature completion should be confirmed before relying on every workflow.",
     screenshots: [
@@ -161,4 +167,22 @@ export const classifieds = [
   { title: "Web applications", text: "Practical interfaces built around real user needs." },
   { title: "Finance technology", text: "Tools for tracking, transparency, and better money workflows." },
   { title: "Visual design", text: "Purposeful posters, social graphics, and brand identity." },
+];
+
+export const learningNotes = [
+  {
+    topic: "Database design",
+    title: "Start with records you can trace",
+    text: "For finance tools, keep each income or expense as a clear record, then derive totals and reports from those records. That makes summaries easier to explain and check.",
+  },
+  {
+    topic: "Java",
+    title: "Give each layer one responsibility",
+    text: "Keeping storage, application rules, and user interaction separate makes a small Java application easier to change and gives each part a clearer testing boundary.",
+  },
+  {
+    topic: "Git workflows",
+    title: "Make changes easy to review",
+    text: "Focused commits, descriptive messages, and a quick diff review help collaborators understand what changed and catch unrelated edits before sharing.",
+  },
 ];
