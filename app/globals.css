@@ -42,7 +42,7 @@ a { color: inherit; text-underline-offset: 4px; }
 .identity p:first-child span { color: var(--soft); }
 .identity .status { color: var(--soft); }
 .identity .status::before { content: ""; display: inline-block; width: .45rem; height: .45rem; margin: 0 .5rem .08rem 0; border-radius: 50%; background: #638e4a; }
-.sections { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 1rem; width: 100vw; margin-left: calc(50% - 50vw); padding: .55rem max(1rem, calc((100vw - 1180px) / 2 + 2.5rem)); border-top: 1px solid color-mix(in srgb, var(--rule) 65%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--rule) 75%, transparent); background: color-mix(in srgb, var(--paper) 82%, transparent); box-shadow: 0 8px 24px rgb(23 37 31 / 8%); backdrop-filter: blur(16px) saturate(155%); -webkit-backdrop-filter: blur(16px) saturate(155%); font: 600 .83rem var(--sans); letter-spacing: .055em; text-transform: uppercase; }
+.sections { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 1rem; width: calc(100% + 5rem); margin-left: -2.5rem; padding: .55rem 2.5rem; border-top: 1px solid color-mix(in srgb, var(--rule) 65%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--rule) 75%, transparent); background: color-mix(in srgb, var(--paper) 82%, transparent); box-shadow: 0 8px 24px rgb(23 37 31 / 8%); backdrop-filter: blur(16px) saturate(155%); -webkit-backdrop-filter: blur(16px) saturate(155%); font: 600 .83rem var(--sans); letter-spacing: .055em; text-transform: uppercase; }
 .sections-links { display: flex; align-items: center; gap: clamp(.8rem, 1.7vw, 1.8rem); min-width: 0; overflow-x: auto; scrollbar-width: thin; }
 .sections a { text-decoration: none; }
 .sections a { flex: 0 0 auto; }
@@ -143,7 +143,7 @@ td:first-child { font-weight: 600; }
   .sheet { padding: 1rem 1.25rem 2.5rem; }
   .dateline { justify-content: center; text-align: center; }
   .dateline span:nth-child(2) { display: none; }
-  .sections { gap: .6rem; padding: .45rem 1rem; }
+  .sections { width: calc(100% + 2.5rem); margin-left: -1.25rem; gap: .6rem; padding: .45rem 1rem; }
   .sections-links { gap: 1rem; }
   .sections .theme-toggle { min-height: 2.3rem; padding: .35rem .5rem; }
   .sections .theme-toggle span:last-child { display: none; }
