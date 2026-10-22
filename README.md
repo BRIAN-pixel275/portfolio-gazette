@@ -53,3 +53,7 @@ The production server runs at [http://localhost:3000](http://localhost:3000) by 
 ## Deployment
 
 The project can be deployed to Vercel by importing the repository and keeping the default Next.js build settings. For other hosting platforms, use `npm run build` and follow the provider's instructions for deploying a Next.js application.
+
+##Build by
+
+Brian 
